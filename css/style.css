@@ -1,0 +1,466 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	font: 12px Helvetica,Arial,sans-serif;
+	line-height: 1.62;
+}
+.db-global-nav{
+	height: 28px;
+	color: #d5d5d5;
+	background-color: #545652;
+	min-width: 950px;
+}
+.db-global-nav .login{
+	float: right;
+	margin: 0 12px 0 0;
+	line-height: 28px;
+}
+.db-global-nav .login a{
+	display: inline-block;
+	zoom: 1;
+	margin:0;
+	padding: 0 12px;
+	height: 28px;
+}
+.db-global-nav .app{
+	position: relative;
+	float: right;
+	margin-right: 5px;
+	line-height: 28px;
+}
+.db-global-nav .app a{
+	display: inline-block;
+	zoom: 1;
+	padding: 0 8px;
+	height: 28px;
+}
+.db-global-nav .app .more{
+	padding: 10px 20px 30px;
+	left: -76px;
+	width: 211px;
+	position: absolute;
+	border-top: none;
+	color: #111;
+	font-size: 15px;
+	line-height: 1.62;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid #d5d5d5;
+	display: none;
+	background-color: white;
+	z-index: 1000;
+}
+.db-global-nav .app .more-active{
+	display: block;
+	z-index: 1000;
+	background-color: white;
+}
+.db-global-nav .app .more .title{
+	padding-top: 170px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 24px;
+	font-weight: 400;
+	background: url(https://img3.doubanio.com/f/shire/12356a377c5190a72a849e5b5c9034dd538b439e/pics/nav/nav_doubanapp_6.png) no-repeat center;
+}
+.db-global-nav .app .more .slogan{
+	margin: 0;
+	font-size: 13px;
+	letter-spacing: 3px;
+	font-weight: 400;
+}
+.db-global-nav .app .more .qrcode{
+	padding-top: 160px;
+	margin-top: 30px;
+	font-size: 0;
+	background: url(https://img3.doubanio.com/f/shire/6aa9dcfa49ca33353c8265cdd43ccdfeb1554285/pics/nav/nav_doubanapp_6_qrcode.png) no-repeat center;
+}
+.db-global-nav .items li{
+	display: inline-block;
+	zoom: 1;
+	line-height: 28px;
+	font-size: 12px;
+	vertical-align: baseline;
+}
+.db-global-nav .items li a{
+	display: inline-block;
+	zoom: 1;
+	padding: 0 12px;
+	height: 28px;
+}
+.db-global-nav a{
+	color: #d5d5d5;
+}
+.db-global-nav a:hover{
+	color: white;
+}
+.db-nav-movie{
+	position: relative;
+	background-color: #f0f3f5;
+	width: 100%;
+	min-width: 950px;
+	overflow: hidden;
+	zoom: 1;
+	margin-bottom: 40px;
+}
+.nav-wrapper{
+	border-color: #e3ebec;
+	border-bottom: 1px solid #e5ebe4;
+}
+
+.db-nav-movie .nav-wrapper .nav-primary{
+	position: relative;
+	padding: 10px 0.5px;
+	zoom: 1;
+	overflow: visible;
+	width: 950px;
+	margin: 0 auto;
+}
+.nav-primary .nav-logo{
+	background: url(https://img3.doubanio.com/f/shire/81252980276323482cf7ec03df52a5c5eb98f6d3/pics/nav/lg_movie_a12_2.png) no-repeat 0 12px;
+	background-image: -webkit-image-set(url(https://img3.doubanio.com/f/shire/81252980276323482cf7ec03df52a5c5eb98f6d3/pics/nav/lg_movie_a12_2.png) 1x, url(https://img3.doubanio.com/f/shire/a609704aa5d2023971b0aec731c4b09031240c9c/pics/nav/lg_movie@2x.png) 2x);
+	float: left;
+	height: 56px;
+	width: 145px;
+	margin: 0 13px 0 0;
+}
+.nav-primary:after{
+	content:'';
+	clear:both;
+	display: block;
+	*zoom: 1;
+}
+.nav-primary .nav-search{
+	position: relative;
+	overflow: hidden;
+	zoom: 1;
+	padding: 10px 0 15px 0;
+}
+.nav-search form{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.nav-search .inp{
+	background-image: url(https://img3.doubanio.com/f/shire/44552ac9f592ad9d2ef5c8ae708533990e94b605/pics/nav1/nav_mv_bg.png);
+	float: left;
+	width: 470px;
+	height: 34px;
+	text-align: center;
+	cursor: text;
+	position: relative;
+}
+.nav-search .inp input{
+	background: #fff;
+	width: 96%;
+	margin: 0;
+	text-align: left;
+	height: 30px;
+	padding-left: 10px;
+	outline: none;
+	border:none;
+}
+.waiting{
+	width: 30px;
+	height: 30px;
+	background-image: url(./loading.gif);
+	background-size: 30px 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+}
+.nav-search .inp-btn{
+	position: relative;
+	left: -1px;
+	width: 37px;
+	height: 34px;
+	zoom: 1;
+	overflow: hidden;
+}
+.nav-search .inp-btn input{
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+	padding: 35px 0 0 0;
+	overflow: hidden;
+	background: url(https://img3.doubanio.com/f/shire/d45aaa7569335285e298dd7f3c045c8b364a19de/pics/nav1/nav_bg_a1.png) no-repeat 0 -40px;
+	color: transparent;
+	cursor: pointer;
+	background-image: url(https://img3.doubanio.com/f/shire/44552ac9f592ad9d2ef5c8ae708533990e94b605/pics/nav1/nav_mv_bg.png);
+	border: 0;
+}
+.nav-secondary{
+	width: 950px;
+	margin: 0 auto;
+	padding-bottom: 0;
+	overflow: hidden;
+	zoom: 1;
+}
+.nav-secondary:after{
+	content:'';
+	display: block;
+	clear: both;
+	*zoom: 1;
+}
+.nav-secondary .nav-items{
+	float: none;
+	zoom: 1;
+	font-size: 13px;
+}
+.nav-secondary .nav-items ul{
+	margin: 9px 0;
+}
+.nav-secondary li{
+	display: inline;
+	margin-right: 30px;
+}
+.nav-secondary li a{
+	color: #27a;
+}
+.nav-secondary li a:hover{
+	color:white;
+	background-color: #27a;
+}
+
+
+.wrapper{
+	width: 950px;
+	margin: 0 auto;
+	display: none;
+
+}
+
+.wrapper .content{
+	min-width: 420px;
+}
+.wrapper .content:after{
+	content:'';
+	display: block;
+	clear: both;
+	*zoom: 1;
+}
+.wrapper .content .article{
+	float: left;
+	width: 590px;
+	padding-right: 40px;
+}
+.article .item{
+	margin-top:15px;
+	margin-bottom: 15px;
+}
+.article .item .poster{
+	width: 65px;
+	height: 100px;
+	padding-right: 37px;
+	padding-bottom: 22px
+}
+.article .movie .info{
+	display: inline-block;
+	vertical-align: top;
+}
+p.first{
+	margin-top: 0;
+	border-bottom: 1px dashed #DDDDDD;
+	line-height: 100%;
+	clear: both;
+}
+.canplay{
+	font-size: 13px; 
+	padding-left: 3px; 
+	color: #00A65F;
+}
+.content .pl{
+	line-height: 150%;
+	color: #666666;
+	width: 482px;
+	margin: 12px 0;
+}
+.star{
+	display: inline-block;
+	background: url(https://img3.doubanio.com/f/shire/b8f4c3672ef81106701071831e22422a745d3b74/pics/rating_icons/ic_rating_s.png) no-repeat;
+	background: -webkit-image-set(url(https://img3.doubanio.com/f/shire/b8f4c3672ef81106701071831e22422a745d3b74/pics/rating_icons/ic_rating_s.png) 1x, url(https://img3.doubanio.com/f/shire/0147ca9efddcac80050854590d26bee587b008df/pics/rating_icons/ic_rating_s@2x.png) 2x) no-repeat;
+	width: 55px;
+	height: 11px;
+	margin: 0 3px 0 0;
+	overflow: hidden;
+}
+.rating-nums{
+	color: #e09015;
+	font-size: 12px;
+	padding: 0 3px;
+}
+.star00{
+	background-position: 0 -110px;
+}
+.star05{
+	background-position: 0 -99px;
+}
+.star10{
+	background-position: 0 -88px;
+}
+.star15{
+	background-position: 0 -77px;
+}
+.star20{
+	background-position: 0 -66px;
+}
+.star25{
+	background-position: 0 -55px;
+}
+.star30{
+	background-position: 0 -44px;
+}
+.star35{
+	background-position: 0 -33px;
+}
+.star40{
+	background-position: 0 -22px;
+}
+.star45{
+	background-position: 0 -11px;
+}
+.item .info a{
+	font-size: 14px;
+	color: #37a;
+	text-decoration: none;
+}
+.item .info a:hover{
+	display: inline-block;
+	background-color: #37a;
+	color:white;
+}
+
+
+.wrapper .content .aside{
+	float:right;
+	width: 310px;
+}
+.aside .ads{
+	width: 300px;
+	height:275px;
+}
+.aside a{
+	font-size: 12px;
+	color: #37a;
+}
+.mg40{
+	margin-bottom: 40px;
+}
+.mg20{
+	margin-bottom: 20px;
+}
+h2{
+	color: #111;
+	margin: 0 0 12px 0;
+	line-height: 150%;
+	font-size: 15px;
+	font-weight: normal;
+}
+.gact{
+	color: #BBBBBB;
+	font-size: 12px;
+	text-align: center;
+	cursor: pointer;
+}
+.gact a{
+	color: #BBBBBB;
+	font-size: 12px;
+	text-align: center;
+}
+.mobile-app{
+	margin-bottom: 25px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizelegibility;
+}
+.mobile-app .app-link{
+	display: block;
+	height: 80px;
+	margin-top: 20px;
+	outline: none;
+	color: #4e4e4e;
+	background: #fafafa;
+	overflow: hidden;
+}
+.mobile-app .qrcode{
+	float:left;
+}
+a img{
+	border-width: 0;
+	vertical-align: middle;
+}
+.mobile-app  .info .app-icon{
+	width: 77px;
+	height: 96px;
+	float: left;
+	margin-right: 3px;
+	background: url(https://img3.doubanio.com/f/movie/42fcc5d1dffcfb74f8cbcb5001e022ca0fa70c98/pics/movie/douban_app_ad/logo.png) no-repeat;
+	background-size: contain;
+	margin-top: -5px;
+}
+.mobile-app .info .main-title{
+	display: inline-block;
+	color: #111;
+	font-size: 18px;
+	font-weight: bold;
+	/*line-height: 1;*/
+	padding-top: 20px;
+	font-weight: 400;
+}
+.mobile-app  .info .sub-title{
+	display: block;
+	font-size: 14px;
+	padding-top: 2px;
+}
+
+.article .flipover{
+	font: 14px Arial, Helvetica, sans-serif;
+	color: #aaa;
+	margin: 20px 0;
+	line-height: 150%;
+	text-align: center;
+}
+.article .flipover .prev{
+	margin-right: 20px;
+}
+.article .flipover .thispage{
+	background-color: #649FC8;
+	color: #fff;
+	padding: 0px 4px;
+	margin: 2px;
+}
+.article .flipover a{
+	padding: 0px 4px;
+	margin: 2px;
+	color: #666699;
+}
+.article .flipover .next{
+	margin-left: 20px;
+}
+.article .flipover .count{
+	margin-left: 20px;
+	font-size: 14px;
+}
+.footer{
+	color: #999;
+	padding: 6px 0;
+	margin-top: 40px;
+	overflow: hidden;
+	zoom: 1;
+	border-top: 1px dashed #ddd;
+}
+
+.footer a{
+	color: #37a;
+	font-size: 12px;
+}
+.footer a:hover{
+	background-color: #37a;
+	color: white;
+}
+}
