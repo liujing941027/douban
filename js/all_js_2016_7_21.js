@@ -87,7 +87,7 @@
 	}
 
 	//翻页组件
-	var flipOver = function flipOver(json){
+	var flipOver = function(json){
 		flip.html('');
 		var count = json.count,
 			total = json.total,
