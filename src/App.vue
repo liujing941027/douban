@@ -1,24 +1,8 @@
 <template>
-  <div id="app">
-    <keep-alive>
-      <router-view></router-view>      
-    </keep-alive>
-  </div>
+	<router-view></router-view>
 </template>
 
-<script>
-export default {
-  name: 'app',
-};
-</script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin:0px;
-  padding:0px;
-}
+<style lang="sass">
+	@import './assets/frozen/css/frozen.css';
+	@import './assets/app.scss';
 </style>
